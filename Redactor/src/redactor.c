@@ -43,7 +43,6 @@ void redactText(char *text, const char *placeholder, unsigned int index) {
 void challenge(){
     char text[BUFFER_SIZE], placeholder[BUFFER_SIZE];
     unsigned int index;
-    unsigned int padding = 0xdeadbeef;
 
     printf("Enter some text: ");
     fgets(text, BUFFER_SIZE, stdin);
