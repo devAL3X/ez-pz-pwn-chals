@@ -33,8 +33,6 @@ void print_flag(){
 int main(){
     init();
 
-    // flag: 
-
     __uint16_t balance = 1000;
 
     puts("Welcome to the underground shop!");
@@ -49,46 +47,20 @@ int main(){
 
         switch(item) {
             case 1:
-                if (balance < 100) {
-                    puts("You don't have enough BC! Sorry :(");
-                    break;
-                }
-                puts("How many cucumbers do you want to buy?");
-                __uint16_t count;
-                scanf("%hu", &count);
-                balance -= count * 100;
-                printf("You bought %hu cucumbers!\n", count);
+                balance -= 100;
+                puts("You bought cucumber!");
                 break;
             case 2:
-                if (balance < 200) {
-                    puts("You don't have enough BC! Sorry :(");
-                    break;
-                }
-                puts("How many carrots do you want to buy?");
-                scanf("%hu", &count);
-                balance -= count * 200;
-                printf("You bought %hu carrots!\n", count);
+                balance -= 200;
+                puts("You bought carrot!");
                 break;
             case 3:
-                if (balance < 50) {
-                    puts("You don't have enough BC! Sorry :(");
-                    break;
-                }
-                puts("How many potatoes do you want to buy?");
-                scanf("%hu", &count);
-                balance -= count * 50;
-                printf("You bought %hu potatoes!\n", count);
+                balance -= 50;
+                puts("You bought potato!");
                 break;
-            
             case 4:
-                if (balance < 322) {
-                    puts("You don't have enough BC! Sorry :(");
-                    break;
-                }
-                puts("How many garlics do you want to buy?");
-                scanf("%hu", &count);
-                balance -= count * 322;
-                printf("You bought %hu garlics!\n", count);
+                balance -= 322;
+                puts("You bought garlic!");
                 break;
             case 5:
                 if (balance < 1337) {
@@ -111,6 +83,6 @@ int main(){
             exit(0);
         }
 
-        printf("Your balance: %d BC\n", balance);
+        printf("Your balance: %d BC\n\n", balance);
     }
 }
