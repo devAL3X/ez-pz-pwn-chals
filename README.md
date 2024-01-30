@@ -8,5 +8,7 @@ Binary exploitation challenges for beginners
     - [secure_login](secure_login)
 1. integer overflow/underflow
     - [underground_shop](underground_shop)
-2. rewriting saved rip
+2. overwriting on stack
+    - [admin](admin)
+3. rewriting saved rip
     - [Redactor](Redactor)
