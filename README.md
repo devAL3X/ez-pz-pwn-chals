@@ -12,3 +12,4 @@ Binary exploitation challenges for beginners
     - [medium] [admin](admin)
 3. rewriting saved rip
     - [medium] [Redactor](Redactor)
+    - [hard] [pizza](pizza)
